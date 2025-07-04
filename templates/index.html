@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam Prepare-inator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+    <h1> Exam Prepare-inator</h1>
+
+    <form id="qa-form" enctype="multipart/form-data">
+        <label for="documents">Upload your Notes (.pdf, .docx, .pptx):</label>
+        <input type="file" id="documents" name="documents" multiple accept=".pdf,.docx,.pptx" required>
+
+        <label for="questions">Enter your questions (one per line):</label>
+        <textarea id="questions" name="questions" rows="8" required></textarea>
+
+        <div class="button-container">
+        <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <div id="output" style="display: none;">
+        <h2>Answers</h2>
+        <ul id="answer-list"></ul>
+
+        <div id="summary-box">
+        <h2>Important Topics</h2>
+        <p id="summary-text"></p>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

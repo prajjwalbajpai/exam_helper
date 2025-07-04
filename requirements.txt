@@ -1,0 +1,13 @@
+flask
+flask-cors
+python-dotenv
+python-pptx
+python-docx
+pymupdf
+langchain
+langchain-huggingface
+langchain-groq
+langgraph
+transformers
+torch
+sentence-transformers
