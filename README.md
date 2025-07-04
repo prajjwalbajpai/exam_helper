@@ -78,7 +78,7 @@ flask run
 
 ## 📸 Working Images
 
-You can include screenshots using the Markdown image syntax:
+An example use case (I have used notes for my Mechanical Engineering Course):
 
 ![Notes Upload Interface](images/image0.png)
 
